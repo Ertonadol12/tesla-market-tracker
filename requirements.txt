@@ -1,0 +1,28 @@
+# Core
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==5.1.0
+playwright==1.40.0
+
+# Data Processing
+pandas==2.2.0
+numpy==1.26.3
+
+# Database
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.25
+
+# Dashboard
+streamlit==1.31.1
+plotly==5.18.0
+
+# Scheduling & Utilities
+apscheduler==3.10.4
+loguru==0.7.2
+
+# Testing
+pytest==8.0.0
+pytest-cov==4.1.0
+
+# Environment
+python-dotenv==1.0.0
