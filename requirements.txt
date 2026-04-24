@@ -26,3 +26,14 @@ pytest-cov==4.1.0
 
 # Environment
 python-dotenv==1.0.0
+
+
+@"
+streamlit==1.31.1
+pandas==2.2.0
+plotly==5.18.0
+sqlalchemy==2.0.25
+requests==2.31.0
+beautifulsoup4==4.12.2
+python-dotenv==1.0.0
+"@ | Out-File -FilePath "requirements.txt" -Encoding utf8
