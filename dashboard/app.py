@@ -2,12 +2,27 @@
 Streamlit Dashboard for Tesla Market Tracker - Clean Version
 """
 
-import streamlit as st
+import os
+import sqlite3
 import pandas as pd
+import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 import sys
-import os
+
+
+# Create sample data if database doesn't exist
+def get_sample_data():
+    return pd.DataFrame({
+        'brand': ['Tesla', 'Tesla', 'Ford', 'Ford', 'BMW'],
+        'model': ['Model 3', 'Model Y', 'Mustang Mach-E', 'F-150 Lightning', 'i4'],
+        'year': [2022, 2023, 2022, 2023, 2022],
+        'price': [42990, 54990, 45990, 65990, 52990],
+        'mileage': [15000, 8000, 12000, 5000, 10000],
+        'location_state': ['CA', 'CA', 'CA', 'CA', 'CA']
+    })
+
+
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
